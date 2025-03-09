@@ -1,0 +1,87 @@
+@import url("../node_modules/@fortawesome/fontawesome-free/css/all.min.css");
+
+
+body {
+    background-color: #777;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* background-color: #ffffff; */
+    overflow: hidden;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo{
+    cursor: pointer;
+    transition: 0.3s ease-in-out ;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+
+
+.logo img {
+    vertical-align: middle;
+}
+h1 {
+    margin: 0;
+    padding: 10px 0;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+}
+nav ul {
+    list-style-type: none;
+
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li i {
+    font-size: larger;
+    color: #8B96A5;
+
+}
+nav ul li i:hover {
+    text-decoration: underline;
+}
+.search-bar {
+    margin-top: 10px;
+    margin-right: 11.5rem;
+}
+.search-bar input[type="text"] {
+    padding: 5px;
+    width:30vw;
+    border: none;
+    border-radius: 2px;
+}
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #0D6EFD;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.search-bar button:hover {
+    background-color: #777;
+}
+
+@media (max-width: 670px) {
+    .search-bar button {
+        width: 5vw;
+        font-size: small;
+    }
+    
+}
