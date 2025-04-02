@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #F8F9FA;
+    background-color: #f7fafc;
 }
 
 header {
@@ -41,8 +41,30 @@ nav {
     display: flex;
     align-items: center;
     gap: 30px;
+    
 }
 
+.navbar
+{
+    border: 2px solid blue;
+}
+.navbar ul
+{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style:normal;
+    padding-block: min(10vh, 0.5rem);
+    
+}
+
+.navbar ul select
+{
+    outline: none;
+    border: none;
+}
 /* Search Bar */
 .search-bar {
     display: flex;
@@ -120,6 +142,13 @@ nav {
     transform: scale(1.1);
 }
 
+select#country option[value="germany"] {
+    background-image: url('./images/ALL_Images/public/flags/germany.png');
+}
+
+
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     header {
@@ -146,5 +175,9 @@ nav {
         flex-wrap: wrap;
         justify-content: center;
         gap: 10px;
+    }
+    .navbar ul{
+        gap: 10px;
+        font-size: x-small;
     }
 }

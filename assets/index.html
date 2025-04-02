@@ -1,40 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevelopersHub Internship</title>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <div class="logo">
-            <img src="./images/Ecommerce Web Design (Community)/Layout/Brand/logo-colored.png" alt="DevelopersHub Logo">
+      <div class="logo">
+        <img
+          src="./images/Ecommerce Web Design (Community)/Layout/Brand/logo-colored.png"
+          alt="DevelopersHub Logo"
+        />
+      </div>
+      <nav>
+        <div class="search-bar">
+          <input id="search-bar" type="text" placeholder="Search..." />
+          <select class="category" form="search-bar">
+            <option>All categories</option>
+            <option>Clothes</option>
+            <option>Mobile</option>
+            <option>Accessories</option>
+            <option>Toys</option>
+          </select>
+          <button type="submit">Search</button>
         </div>
-        <nav>
-            <div class="search-bar">
-                <input type="text" placeholder="Search...">
-                <select class="category">
-                    <option>All categories</option>
-                    <option>Clothes</option>
-                    <option>Mobile</option>
-                    <option>Accessories</option>
-                    <option>Toys</option>
-                </select>
-                <button type="submit">Search</button>
-            </div>
-            <ul class="nav-icons">
-                <li><i class="fa-solid fa-user"></i><span>Profile</span></li>
-                <li><i class="fa-solid fa-envelope"></i><span>Message</span></li>
-                <li><i class="fa-solid fa-heart"></i><span>Orders</span></li>
-                <li><i class="fa-solid fa-shopping-cart"></i><span>Cart</span></li>
-            </ul>
-        </nav>
+        <ul class="nav-icons">
+          <li><i class="fa-solid fa-user"></i><span>Profile</span></li>
+          <li><i class="fa-solid fa-envelope"></i><span>Message</span></li>
+          <li><i class="fa-solid fa-heart"></i><span>Orders</span></li>
+          <li><i class="fa-solid fa-shopping-cart"></i><span>Cart</span></li>
+        </ul>
+      </nav>
     </header>
-</body>
+    <div class="navbar">
+      <ul>
+        <li><i class="fa-solid fa-bars"></i></li>
+        <li>All category</li>
+        <li>Hot offer</li>
+        <li>Gift boxes</li>
+        <li>Projects</li>
+        <li>Menu items</li>
+        <li>
+          <select name="help" id="">
+            <option value="">Help</option>
+            <option value="">Mail</option>
+            <option value="">inbox</option>
+          </select>
+        </li>
+        <li>
+          <select name="" id="">
+            <option value="">English,USD</option>
+            <option value="">Urdu,PKR</option>
+            <option value="">Hindi,INR</option>
+            <option value="">Arabic,SAR</option>
+          </select>
+        </li>
+        <li>
+            <select id="country">
+                <option value="us">🇺🇸 United States</option>
+                <option value="germany">🇩🇪 Germany</option>
+                <option value="france">🇫🇷 France</option>
+            </select>
+            
+        </li>
+      </ul>
+    </div>
+  </body>
 </html>
