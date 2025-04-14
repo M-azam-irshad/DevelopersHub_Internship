@@ -20,6 +20,7 @@ html {
 }
 
 body {
+  scroll-behavior: smooth;
   width: 100vw;
   background-color: #f0f5f9;
   line-height: 1.6;
@@ -313,9 +314,6 @@ nav {
   background-color: #0563fb;
 }
 
-
-
-
 #heroCard2 {
   color: white;
   padding: 8px 8px;
@@ -336,6 +334,46 @@ nav {
   height: 95px;
 }
 
+.offers {
+  border: 2px solid black;
+  width: 250px;
+  height: 200px;
+}
+
+#offersParent {
+  margin: auto;
+  display: flex;
+  width: clamp(500px, 80vw, 1600px);
+  height: 200px;
+  border: 2px double blue;
+}
+
+#offersChild1 {
+  width: 300px;
+  height: 200px;
+  padding: 12px 12px;
+  font-family: "Inter", sans-serif;
+}
+
+#offersChild1_CardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  width: 200px;
+  height: 50px;
+  margin-top: 10px;
+}
+.offersChild1_Cards {
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 6px;
+  line-height: 1.1;
+  width: 45px;
+  height: 100%;
+  color: white;
+  background-color: #606060e4;
+}
 /* Responsive Design */
 
 @media (max-width: 780px) {
