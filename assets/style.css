@@ -181,7 +181,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   background-color: white;
-  width: clamp(500px, 80vw, 1600px);
+  width: 1180px;
   height: 400px;
   aspect-ratio: 3/1;
   margin: 20px auto;
@@ -335,22 +335,33 @@ nav {
 }
 
 .offers {
-  border: 2px solid black;
-  width: 250px;
-  height: 200px;
+  width: 179px;
+  height: 240px;
+  
+}
+.offersChildren
+{
+  padding: 10px 10px;
+  text-align: center;
+  border: 1px solid rgba(213, 213, 213, 0.815);
+  font-family: "Inter", sans-serif;
+
+  
 }
 
 #offersParent {
-  margin: auto;
+  background-color: #fff;
+  margin:auto;
   display: flex;
-  width: clamp(500px, 80vw, 1600px);
-  height: 200px;
-  border: 2px double blue;
+  justify-content: center;
+  width:1180px;
+  height: 240px;
 }
 
 #offersChild1 {
-  width: 300px;
-  height: 200px;
+  margin-top: 10px;
+  width: 464px !important;
+  height: 240px;
   padding: 12px 12px;
   font-family: "Inter", sans-serif;
 }
@@ -362,7 +373,8 @@ nav {
   gap: 6px;
   width: 200px;
   height: 50px;
-  margin-top: 10px;
+  margin: auto;
+  margin-top: 10px !important; 
 }
 .offersChild1_Cards {
   text-align: center;
@@ -373,6 +385,12 @@ nav {
   height: 100%;
   color: white;
   background-color: #606060e4;
+}
+
+.offerImages
+{
+  width: 140px;
+  height: 140px;
 }
 /* Responsive Design */
 
