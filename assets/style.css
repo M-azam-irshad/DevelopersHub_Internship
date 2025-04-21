@@ -6,6 +6,10 @@
   --transition: all 0.3s ease;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
@@ -392,6 +396,77 @@ nav {
   width: 140px;
   height: 140px;
 }
+
+#outdoorParent
+{
+  margin-top: 20px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1180px;
+  height: 257px;
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns:  repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  background-color: white
+}
+
+#outdoorParent div:not(#outdoor1) {
+  position: relative;
+}
+
+#outdoorParent div:not(#outdoor1) img {
+  position: absolute;
+  top: 40px;
+  right: 0px;
+}
+
+.text {
+  margin: 10px 15px;
+}
+
+
+
+#outdoorParent div:not(#outdoor1) img {
+  width: 82px;
+  height: 82px;
+}
+
+
+
+
+.outdoorCells
+{
+ width: 224px;
+ height: 127px;
+ border: 2px solid red;
+}
+
+#outdoor1
+{
+
+  background: url("./images/ALL_Images/public/image92.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 2px solid blue;
+  width: 280px;
+  height: 254px;
+  grid-row: span 2;
+  padding:10px 15px;
+  font-size: clamp(1em,1.3vw,2em);
+  font-weight: bold;
+  font-family: "Winky Rough", sans-serif;
+}
+
+
+.outdoor1 p
+{
+  font-size: larger;
+  font-weight: bolder;
+}
+
 /* Responsive Design */
 
 @media (max-width: 780px) {
@@ -510,6 +585,36 @@ nav {
     font-size: 0.95rem;
   }
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #outdoorParent div:not(#outdoor1) img {
+    top: 30px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .text {
+    margin: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #outdoorParent div:not(#outdoor1) img {
+    top: 20px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .text {
+    margin: 5px 10px;
+    font-size: 0.8rem;
+  }
+}
+
 
 /* Accessibility Improvements */
 button:focus-visible,
